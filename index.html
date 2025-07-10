@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced App Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-panel">
+      <h2>🧩 App Builder</h2>
+      <label>App Name:
+        <input type="text" id="appName" placeholder="My App"/>
+      </label>
+      <label><input type="checkbox" id="txtbox" /> TextBox</label>
+      <label><input type="checkbox" id="btn" /> Button</label>
+      <label><input type="checkbox" id="webview" /> WebView</label>
+      <label><input type="checkbox" id="imagePicker" /> Image Picker</label>
+      <label><input type="checkbox" id="camera" /> Camera (Mock)</label>
+
+      <h3>🎨 Theme</h3>
+      <label>Background Color: <input type="color" id="bgColor" value="#ffffff"></label>
+      <label>Text Color: <input type="color" id="textColor" value="#000000"></label>
+
+      <button onclick="generateCode()">Generate HTML</button>
+    </div>
+
+    <div class="right-panel">
+      <h3>🔍 Live Preview</h3>
+      <div id="previewArea" class="preview-box"></div>
+
+      <h3>💻 Generated HTML Code:</h3>
+      <textarea id="output" readonly></textarea>
+
+      <a href="templates/kodular-template.aia" download>⬇️ Download AIA File</a><br>
+      <a href="templates/android-template.zip" download>⬇️ Download Android Studio Project</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="preview.js"></script>
+</body>
+</html>
